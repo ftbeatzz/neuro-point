@@ -1,0 +1,260 @@
+@keyframes bounceOnce {
+	0%,
+	8%,
+	100% {
+		transform: translateY(0);
+	}
+	4% {
+		transform: translateY(-8px);
+	}
+}
+
+.heroContainer {
+	display: flex;
+	justify-content: center;
+	.heroWrapper {
+		width: 100%;
+		max-width: 1280px;
+		padding: 125px 0px;
+		.heroContent {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.heroTxt {
+				h1 {
+					color: #01103d;
+					font-family: Manrope;
+					font-size: 50px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+					letter-spacing: 2.5px;
+
+					span {
+						color: #2e8afe;
+					}
+				}
+
+				h2 {
+					color: #2e8afe;
+					font-family: Manrope;
+					font-size: 62px;
+					font-style: normal;
+					font-weight: 800;
+					line-height: normal;
+					letter-spacing: 3.1px;
+					padding-bottom: 12px;
+				}
+
+				p {
+					color: #01103d;
+					font-family: Manrope;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: normal;
+					letter-spacing: 0.9px;
+					max-width: 711px;
+				}
+			}
+
+			.heroBtns {
+				display: flex;
+				width: 100%;
+				gap: 16px;
+				padding-top: 30px;
+
+				button {
+					width: 100%;
+					color: #2e8afe;
+					font-family: Manrope;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+					letter-spacing: 0.8px;
+					border-radius: 10px;
+					border: 1px solid #2e8afe;
+					background: #fff;
+					height: 45px;
+					max-width: 200px;
+
+					svg {
+						transition: all 0.3s ease;
+					}
+
+					.arrowWrapper {
+						display: inline-block; // чтобы transform работал корректно
+						animation: bounceOnce 10s ease infinite;
+					}
+
+					&:hover {
+						svg {
+							transform: translateY(-8px);
+						}
+					}
+				}
+
+				.blueBtn {
+					color: #f4f4f4;
+					font-family: Manrope;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+					letter-spacing: 0.8px;
+					border-radius: 10px;
+					background: #2e8afe;
+					max-width: 255px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 10px;
+				}
+			}
+
+			.heroRightWrapper {
+				width: 100%;
+				max-width: 443px;
+				display: flex;
+				justify-content: center;
+				position: relative;
+			}
+
+			.heroRight {
+				img {
+					max-width: 266px;
+					max-height: 266px;
+				}
+			}
+		}
+	}
+}
+
+.rateContainer {
+	display: flex;
+	justify-content: center;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	margin-left: 50px;
+	.rateWrapper {
+		width: 100%;
+		max-width: 1280px;
+		display: flex;
+		justify-content: center;
+		.rateBlueBlock {
+			border-radius: 5px;
+			background: #2e8afe;
+			width: 100%;
+			max-width: 1230px;
+			height: 630px;
+			.rateContent {
+				border-radius: 14px;
+				border: 2px dashed #2e8afe;
+				background: linear-gradient(271deg, #f3f3f3 1.32%, #fff 98.68%);
+				width: 100%;
+				// max-width: 1200px;
+				height: 630px;
+				transform: rotate(6.132deg);
+				display: flex;
+				align-items: center;
+
+				.rateLeft {
+					transform: rotate(-6.132deg);
+					display: flex;
+					flex-direction: column;
+					gap: 16px;
+					padding-left: 65px;
+
+					h2 {
+						color: #01103d;
+						font-family: Manrope;
+						font-size: 44px;
+						font-style: normal;
+						font-weight: 600;
+						line-height: normal;
+						letter-spacing: 2.2px;
+						max-width: 685px;
+					}
+
+					span {
+						color: #2e8afe;
+						font-family: Manrope;
+						font-size: 44px;
+						font-style: normal;
+						font-weight: 800;
+						line-height: normal;
+						letter-spacing: 2.2px;
+					}
+
+					p {
+						color: #01103d;
+						font-family: Manrope;
+						font-size: 18px;
+						font-style: normal;
+						font-weight: 600;
+						line-height: normal;
+						letter-spacing: 0.9px;
+						max-width: 595px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.percentageContainer {
+	padding: 40px 0;
+	background: #eaf1fb;
+	display: flex;
+	justify-content: center;
+
+	.percentageWrapper {
+		width: 100%;
+		max-width: 1280px;
+
+		.percentageContent {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 20px;
+
+			.block {
+				text-align: center;
+
+				h3 {
+					color: #01103d;
+					text-align: center;
+					font-family: Manrope;
+					font-size: 62px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+					letter-spacing: 3.1px;
+				}
+
+				p {
+					color: #01103d;
+					text-align: center;
+					font-family: Manrope;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+					letter-spacing: 0.9px;
+
+					span {
+						color: #2e8afe;
+					}
+				}
+			}
+
+			.line {
+				width: 100px;
+				height: 2px;
+				border-top: 2px dashed #2e8afe;
+			}
+		}
+	}
+}

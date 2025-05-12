@@ -1,0 +1,162 @@
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	padding: 24px;
+	transform: rotate(-6.132deg);
+}
+
+.dashV {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+}
+
+.dashH {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 0;
+}
+
+.blocks {
+	display: flex;
+	gap: 32px;
+	z-index: 1;
+	align-items: flex-end;
+}
+
+.blockHeart,
+.blockOxygen {
+	background: #fff;
+	border-radius: 12px;
+	padding: 10px 25px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	h4 {
+		color: #01103d;
+		font-family: Manrope;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		letter-spacing: 0.7px;
+	}
+}
+
+.blockOxygen {
+	margin-bottom: 55px;
+}
+
+.value {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.status {
+	color: #3dafa7;
+	font-family: Manrope;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	letter-spacing: 0.5px;
+}
+
+.sleepRowTop {
+	display: flex;
+  align-items: center;
+	justify-content: space-between;
+  padding-bottom: 10px;
+
+  svg{
+    max-width: 125px;
+  }
+
+	h3 {
+		color: rgba(0, 0, 0, 0.5);
+		text-align: right;
+		font-family: Manrope;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: 0.7px;
+	}
+}
+
+.sleepRow {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	background: #fff;
+	border-radius: 12px;
+	padding: 10px 12px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+	width: 100%;
+	max-width: 600px;
+}
+
+.headerSleepRow {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 500;
+	font-size: 14px;
+
+	p {
+		color: #01103d;
+		font-family: Manrope;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		letter-spacing: 0.7px;
+	}
+
+	& :nth-last-child(1) {
+		color: #3dafa7;
+		font-family: Manrope;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		letter-spacing: 0.7px;
+	}
+}
+
+.values {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+}
+
+.values > div {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.barBackground {
+	background: #f0f0f0;
+	height: 8px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.barFill {
+	background: #2e8afe;
+	height: 100%;
+	width: 0;
+	border-radius: 4px 0 0 4px;
+}

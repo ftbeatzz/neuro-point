@@ -1,0 +1,11 @@
+.canvas {
+  position: absolute;
+  width: 460px;
+  height: 460px;
+  /* ставим точку привязки в центр родителя */
+  top: 50%;
+  left: 50%;
+  /* смещаем сам элемент на половину своего размера назад */
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}

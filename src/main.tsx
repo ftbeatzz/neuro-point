@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import MainLayout from './layouts/MainLayout'
 import HomeScreen from './pages/HomeScreen/HomeScreen'
-import './index.css'
+import './index.scss'
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
