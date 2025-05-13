@@ -8,16 +8,18 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
 	const [loading, setLoading] = useState(true)
 
 	useEffect(() => {
-		const timer = setTimeout(() => {
-			setLoading(false)
-		}, 2000) // показываем прелоадер 1.8 сек
+		const fetchData = async () => {
+			try {
+				await new Promise(resolve => setTimeout(resolve, 2000))
+			} finally {
+				setLoading(false)
+			}
+		}
 
-		return () => clearTimeout(timer)
+		fetchData()
 	}, [])
 
-	if (loading) {
-		return <Preloader />
-	}
+	if (loading) return <Preloader />
 
 	return (
 		<>
