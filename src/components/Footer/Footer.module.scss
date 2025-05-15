@@ -1,6 +1,11 @@
 .footer {
 	background: #eaebee;
 	padding: 50px 0;
+
+	@media only screen and (max-width: 1023px) {
+	padding: 30px 0;
+	}
+
 	.container {
 		max-width: 1280px;
 		margin: 0 auto;
@@ -9,6 +14,11 @@
     justify-content: space-between;
     gap: 44px;
     padding: 0 15px;
+
+		@media only screen and (max-width: 1023px) {
+		flex-direction: column;
+		padding: 0 40px;
+		}
 
 		nav {
 			display: flex;
