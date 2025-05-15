@@ -431,7 +431,7 @@ const HomeScreen = () => {
 									animate={isChooseInView ? { opacity: 1, y: 0 } : {}}
 									transition={{ duration: 0.6 }}
 								>
-									Why Choose Neuropoint?
+									Why Choose <span>Neuropoint?</span>
 								</motion.h2>
 
 								<motion.h3

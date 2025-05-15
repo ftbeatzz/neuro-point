@@ -9,7 +9,6 @@ import LogoHeader from '../../icons/LogoHeader'
 const LINE_V = 235
 const LINE_H = 365
 const DASH_BORDER = 2
-const BAR_FULL = 300
 const BAR_FILL = 200
 
 const useCount = (end: number, duration = 1000) => {
@@ -142,7 +141,7 @@ export const HealthDashboard: React.FC = () => {
 					</div>
 					<div
 						className={styles.barBackground}
-						style={{ width: `${BAR_FULL}px` }}
+						// style={{ width: `${BAR_FULL}px` }}
 					>
 						<motion.div
 							className={styles.barFill}

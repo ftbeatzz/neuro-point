@@ -31,6 +31,10 @@
 				padding: 0 40px;
 			}
 
+			@media only screen and (max-width: 767px) {
+				padding: 0 25px;
+			}
+
 			.heroTxt {
 				h1 {
 					color: #01103d;
@@ -48,6 +52,11 @@
 					@media only screen and (max-width: 1023px) {
 						font-size: 44px;
 					}
+
+					@media only screen and (max-width: 767px) {
+						font-size: 24px;
+						text-align: center;
+					}
 				}
 
 				h2 {
@@ -62,6 +71,12 @@
 
 					@media only screen and (max-width: 1023px) {
 						font-size: 48px;
+					}
+
+					@media only screen and (max-width: 767px) {
+						font-size: 34px;
+						text-align: center;
+						padding-bottom: 8px;
 					}
 				}
 
@@ -79,6 +94,11 @@
 						font-size: 16px;
 						max-width: none;
 					}
+
+					@media only screen and (max-width: 767px) {
+						font-size: 15px;
+						text-align: center;
+					}
 				}
 			}
 
@@ -90,6 +110,13 @@
 
 				@media only screen and (max-width: 1023px) {
 					padding-top: 16px;
+				}
+
+				@media only screen and (max-width: 767px) {
+					padding-top: 16px;
+					flex-direction: column;
+					align-items: center;
+					gap: 10px;
 				}
 
 				button {
@@ -109,6 +136,11 @@
 
 					svg {
 						transition: all 0.3s ease;
+					}
+
+					@media only screen and (max-width: 767px) {
+						width: 100%;
+						max-width: none;
 					}
 
 					.arrowWrapper {
@@ -138,6 +170,11 @@
 					align-items: center;
 					justify-content: center;
 					gap: 10px;
+
+					@media only screen and (max-width: 767px) {
+						width: 100%;
+						max-width: none;
+					}
 				}
 			}
 
@@ -153,6 +190,10 @@
 				img {
 					max-width: 266px;
 					max-height: 266px;
+
+					@media only screen and (max-width: 767px) {
+						max-width: 300px;
+					}
 				}
 			}
 		}
@@ -168,6 +209,10 @@
 		padding: 80px;
 	}
 
+	@media only screen and (max-width: 767px) {
+		padding: 45px 20px;
+	}
+
 	.rateWrapper {
 		width: 100%;
 		max-width: 1280px;
@@ -179,6 +224,12 @@
 			width: 100%;
 			max-width: 1230px;
 			min-height: 630px;
+
+			@media only screen and (max-width: 767px) {
+				transform: rotate(0deg);
+				background: #f3f3f3;
+			}
+
 			.rateContent {
 				border-radius: 14px;
 				border: 2px dashed #2e8afe;
@@ -195,6 +246,13 @@
 					flex-direction: column;
 				}
 
+				@media only screen and (max-width: 767px) {
+					transform: rotate(0deg);
+					padding: 12px 20px;
+					flex-direction: column-reverse;
+					gap: 20px;
+				}
+
 				.rateLeft {
 					transform: rotate(-6.132deg);
 					display: flex;
@@ -204,6 +262,11 @@
 
 					@media only screen and (max-width: 1023px) {
 						padding-top: 50px;
+					}
+
+					@media only screen and (max-width: 767px) {
+						transform: rotate(0deg);
+						padding: 0;
 					}
 
 					h2 {
@@ -251,6 +314,10 @@
 							font-size: 16px;
 							padding-right: 55px;
 						}
+
+						@media only screen and (max-width: 767px) {
+							padding-right: 0;
+						}
 					}
 				}
 			}
@@ -266,6 +333,10 @@
 
 	@media only screen and (max-width: 1023px) {
 		padding: 20px 0;
+	}
+
+	@media only screen and (max-width: 767px) {
+		min-height: 360px;
 	}
 
 	.percentageWrapper {
@@ -299,6 +370,10 @@
 						font-size: 48px;
 						letter-spacing: normal;
 					}
+
+					@media only screen and (max-width: 767px) {
+						font-size: 34px;
+					}
 				}
 
 				p {
@@ -317,6 +392,10 @@
 
 					@media only screen and (max-width: 1023px) {
 						font-size: 16px;
+					}
+
+					@media only screen and (max-width: 767px) {
+						font-size: 15px;
 					}
 				}
 			}
@@ -339,6 +418,10 @@
 		padding: 95px 0;
 	}
 
+	@media only screen and (max-width: 767px) {
+		padding: 60px 0;
+	}
+
 	.advantagesWrapper {
 		width: 100%;
 		max-width: 1280px;
@@ -357,6 +440,10 @@
 			@media only screen and (max-width: 1023px) {
 				font-size: 36px;
 			}
+
+			@media only screen and (max-width: 767px) {
+				font-size: 26px;
+			}
 		}
 		.advantagesContent {
 			display: flex;
@@ -366,6 +453,10 @@
 
 			@media only screen and (max-width: 1023px) {
 				padding: 0 40px;
+			}
+
+			@media only screen and (max-width: 767px) {
+				padding: 0 20px;
 			}
 
 			.advantagesList {
@@ -396,7 +487,7 @@
 					z-index: 1;
 
 					@media only screen and (max-width: 1100px) {
-						transform: scale(1.02);
+						transform: scale(1.05);
 					}
 				}
 
@@ -413,6 +504,10 @@
 					@media only screen and (max-width: 1023px) {
 						font-size: 20px;
 					}
+
+					@media only screen and (max-width: 767px) {
+						font-size: 18px;
+					}
 				}
 
 				p {
@@ -428,6 +523,10 @@
 					@media only screen and (max-width: 1023px) {
 						font-size: 16px;
 						max-width: none;
+					}
+
+					@media only screen and (max-width: 767px) {
+						font-size: 14px;
 					}
 				}
 			}
@@ -448,7 +547,11 @@
 	padding-bottom: 25px;
 
 	@media only screen and (max-width: 1023px) {
-	padding-top: 55px;
+		padding-top: 55px;
+	}
+
+	@media only screen and (max-width: 767px) {
+		padding-top: 134px;
 	}
 
 	.appWrapper {
@@ -464,6 +567,10 @@
 				gap: 0;
 			}
 
+			@media only screen and (max-width: 767px) {
+				padding: 0 20px;
+			}
+
 			.appTop {
 				.appMockups {
 					max-height: 200px;
@@ -477,11 +584,19 @@
 						align-items: flex-end;
 					}
 
+					@media only screen and (max-width: 767px) {
+						max-height: 80px;
+					}
+
 					img {
 						max-width: 367px;
 
 						@media only screen and (max-width: 1023px) {
 							max-width: 265px;
+						}
+
+						@media only screen and (max-width: 767px) {
+							max-width: 210px;
 						}
 					}
 				}
@@ -501,6 +616,12 @@
 						justify-content: space-between;
 					}
 
+					@media only screen and (max-width: 767px) {
+						flex-direction: column;
+						align-items: center;
+						padding: 0 12px;
+					}
+
 					h2 {
 						color: #01103d;
 						font-family: Manrope;
@@ -513,6 +634,10 @@
 						@media only screen and (max-width: 1023px) {
 							font-size: 36px;
 							max-width: 340px;
+						}
+
+						@media only screen and (max-width: 767px) {
+							font-size: 24px;
 						}
 					}
 
@@ -529,6 +654,11 @@
 						@media only screen and (max-width: 1023px) {
 							font-size: 20px;
 							max-width: 370px;
+						}
+
+						@media only screen and (max-width: 767px) {
+							font-size: 18px;
+							padding-bottom: 24px;
 						}
 					}
 				}
@@ -561,6 +691,10 @@
 						gap: 8px;
 					}
 
+					@media only screen and (max-width: 767px) {
+						padding: 18px 12px;
+					}
+
 					h2 {
 						color: #333;
 						font-family: Manrope;
@@ -572,6 +706,10 @@
 
 						@media only screen and (max-width: 1023px) {
 							font-size: 20px;
+						}
+
+						@media only screen and (max-width: 767px) {
+							font-size: 18px;
 						}
 					}
 
@@ -587,6 +725,10 @@
 						@media only screen and (max-width: 1023px) {
 							font-size: 16px;
 							max-width: none;
+						}
+
+						@media only screen and (max-width: 767px) {
+							font-size: 14px;
 						}
 					}
 				}
@@ -607,7 +749,11 @@
 	}
 
 	@media only screen and (max-width: 1023px) {
-	padding: 95px 85px;
+		padding: 95px 85px;
+	}
+
+	@media only screen and (max-width: 767px) {
+		padding: 48px 20px;
 	}
 	.chooseWrapper {
 		width: 100%;
@@ -621,6 +767,11 @@
 			min-height: 468px;
 			transform: rotate(-7.124deg);
 			max-width: 1115px;
+
+			@media only screen and (max-width: 767px) {
+				background: #f3f3f3;
+				transform: rotate(0deg);
+			}
 
 			.chooseContent {
 				width: 100%;
@@ -636,7 +787,11 @@
 				gap: 50px;
 
 				@media only screen and (max-width: 1023px) {
-				gap: 24px;
+					gap: 24px;
+				}
+
+				@media only screen and (max-width: 767px) {
+					transform: rotate(0deg);
 				}
 
 				.chooseTop {
@@ -657,8 +812,16 @@
 						padding-top: 30px;
 
 						@media only screen and (max-width: 1023px) {
-						padding-top: 20px;
-						font-size: 36px;
+							padding-top: 20px;
+							font-size: 36px;
+						}
+
+						@media only screen and (max-width: 767px) {
+							font-size: 24px;
+
+							span {
+								color: #2e8afe;
+							}
 						}
 					}
 
@@ -675,7 +838,11 @@
 						width: 100%;
 
 						@media only screen and (max-width: 1023px) {
-						font-size: 18px;
+							font-size: 18px;
+						}
+
+						@media only screen and (max-width: 767px) {
+							font-size: 17px;
 						}
 					}
 				}
@@ -687,10 +854,15 @@
 					gap: 5px;
 
 					@media only screen and (max-width: 1023px) {
-					flex-direction: column;
-					gap: 12px;
-					padding: 0 24px;
-					padding-bottom: 20px;
+						flex-direction: column;
+						gap: 12px;
+						padding: 0 24px;
+						padding-bottom: 20px;
+					}
+
+					@media only screen and (max-width: 767px) {
+						padding: 0 12px;
+						padding-bottom: 12px;
 					}
 
 					.chooseBlock {
@@ -700,6 +872,10 @@
 						box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2),
 							0px 4px 20px 0px rgba(0, 0, 0, 0.1);
 						padding: 12px 23px;
+
+						@media only screen and (max-width: 767px) {
+							padding: 18px 12px;
+						}
 
 						h2 {
 							color: #333;
@@ -712,7 +888,12 @@
 							padding-bottom: 16px;
 
 							@media only screen and (max-width: 1023px) {
-							font-size: 20px;
+								font-size: 20px;
+							}
+
+							@media only screen and (max-width: 767px) {
+								font-size: 18px;
+								text-align: center;
 							}
 						}
 
@@ -741,8 +922,12 @@
 									max-width: 383px;
 
 									@media only screen and (max-width: 1023px) {
-									max-width: none;
-									font-size: 16px;
+										max-width: none;
+										font-size: 16px;
+									}
+
+									@media only screen and (max-width: 767px) {
+										font-size: 14px;
 									}
 								}
 							}
@@ -762,7 +947,7 @@
 	margin-bottom: 80px;
 
 	@media only screen and (max-width: 1023px) {
-	margin-bottom: 32px;
+		margin-bottom: 32px;
 	}
 
 	.trackingWrapper {
@@ -773,6 +958,10 @@
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
+
+			@media only screen and (max-width: 767px) {
+				padding: 0 20px;
+			}
 
 			h2 {
 				color: #01103d;
@@ -787,7 +976,11 @@
 				max-width: 612px;
 
 				@media only screen and (max-width: 1023px) {
-				font-size: 32px;
+					font-size: 32px;
+				}
+
+				@media only screen and (max-width: 767px) {
+					font-size: 26px;
 				}
 			}
 
@@ -807,7 +1000,7 @@
 				max-width: 612px;
 
 				@media only screen and (max-width: 1023px) {
-				font-size: 16px;
+					font-size: 16px;
 				}
 			}
 
